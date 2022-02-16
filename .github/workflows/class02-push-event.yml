@@ -1,4 +1,4 @@
-name: Aula 02 - Push Event
+name: Class 02 - Push Event
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: Aula 02 - Workflow dispatch event
+name: Class 02 - Workflow dispatch event
 
 on:
    workflow_dispatch:
