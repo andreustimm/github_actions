@@ -1,0 +1,12 @@
+name: Aula 02 - Workflow dispatch event
+
+on:
+   workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: passo para a ilustrar eventos
+        run: echo Workflow dispatch manual event
+
