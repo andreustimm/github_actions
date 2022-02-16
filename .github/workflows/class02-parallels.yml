@@ -1,7 +1,7 @@
 name: Class 02 - Parallels Jobs
 
 on:
-   push
+  push
 
 jobs:
   job1:

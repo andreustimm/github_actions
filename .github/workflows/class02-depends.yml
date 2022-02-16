@@ -1,7 +1,7 @@
 name: Class 02 - Depends Jobs
 
 on:
-   push
+  push
 
 jobs:
   build:
