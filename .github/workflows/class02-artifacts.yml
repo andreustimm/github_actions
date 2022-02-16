@@ -1,0 +1,19 @@
+name: Class 02 - Artifacts
+
+on:
+   push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create an artifact for reuse
+        run: echo "Full featured artifact" > /tmp/build-result.txt
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: use of artifact created
+        run: ls /tmp/build-result.txt
+
