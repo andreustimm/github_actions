@@ -19,7 +19,7 @@ jobs:
     name: Example of custom action
     steps:
       - name: Checkout Actions
-        run: actions/checkout
+        uses: actions/checkout
       - id: step-caller
         uses: "./.github/actions/hello/"
         with:
