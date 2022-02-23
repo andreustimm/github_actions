@@ -18,8 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Example of custom action
     steps:
+      - name: Checkout Actions
+        run: actions/checkout
       - id: step-caller
-        uses: "./.github/actions/hello/action.yml"
+        uses: "./.github/actions/hello/"
         with:
           the-caller: 'Myself'
       - run: echo random-number ${{ steps.step-caller.outputs.random-number }}
