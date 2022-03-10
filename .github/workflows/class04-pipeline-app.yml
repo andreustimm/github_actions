@@ -1,4 +1,4 @@
-name: pipeline app
+name: Class 04 - Pipeline App
 
 on:
   push:
