@@ -1,0 +1,13 @@
+name: Class 05 - Ansible basic
+
+on: workflow_dispatch
+
+jobs:
+  ansible-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - run: ansible --version
+
