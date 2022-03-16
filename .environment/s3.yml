@@ -1,0 +1,16 @@
+---
+- name: Class 05 - Create S3 bucket and deploy artifacts
+  hosts: localhost
+
+  tasks:
+    - name: config bucket
+      amazon.aws.s3_bucket:
+        name: devops-andreus
+        state: present
+
+    - name: copy files
+      community.aws.s3_sync:
+        bucket: devops-andreus
+        file_root: frontend/out
+        permission: public-read
+
