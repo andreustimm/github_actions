@@ -2,4 +2,4 @@
 
 ## Aula 01
 
-Como montar um Pipeline no Github Actions
+Como montar um Pipeline no Github Actions, diversos exemplos.
